@@ -7,7 +7,7 @@ const rule = require("../lib/rules/disallow-no-translation-text");
 
 module.exports = {
   plugins: {
-    react-zalora: {
+    "react-zalora": {
       rules: [rule],
     },
   },
