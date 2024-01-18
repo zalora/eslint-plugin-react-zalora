@@ -8,7 +8,6 @@ const rule = require("../lib/rules/disallow-no-translation-text");
 module.exports = {
   plugins: {
     react: {
-      deprecatedRules,
       rules: [rule],
     },
   },

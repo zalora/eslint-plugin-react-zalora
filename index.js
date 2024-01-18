@@ -9,7 +9,6 @@ const allRules = require("./lib/rules");
 const plugins = ["react"];
 
 module.exports = {
-  deprecatedRules: configAll.plugins.react.deprecatedRules,
   rules: allRules,
   configs: {
     recommended: Object.assign({}, configRecommended, {
