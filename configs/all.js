@@ -9,7 +9,7 @@ module.exports = {
   plugins: {
     "react-zalora": {
       rules: {
-        "disallow-no-translation-text": rule,
+        "react-zalora/disallow-no-translation-text": 1,
       },
     },
   },
