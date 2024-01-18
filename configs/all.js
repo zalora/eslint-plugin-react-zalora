@@ -6,15 +6,9 @@ const entries = require("object.entries");
 const rule = require("../lib/rules/disallow-no-translation-text");
 
 module.exports = {
-  plugins: {
-    "react-zalora": {
-      rules: {
-        "react-zalora/disallow-no-translation-text": 1,
-      },
-    },
-  },
+  plugins: ["react-zalora"],
   rules: {
-    "disallow-no-translation-text": rule,
+    "react-zalora/disallow-no-translation-text": 1,
   },
   languageOptions: {
     parserOptions: {
