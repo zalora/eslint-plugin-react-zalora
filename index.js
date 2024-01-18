@@ -1,15 +1,12 @@
-'use strict';
+"use strict";
 
-const configAll = require('./configs/all');
-const configRecommended = require('./configs/recommended');
-const configRuntime = require('./configs/jsx-runtime');
+const configAll = require("./configs/all");
+const configRecommended = require("./configs/recommended");
 
-const allRules = require('./lib/rules');
+const allRules = require("./lib/rules");
 
 // for legacy config system
-const plugins = [
-  'react',
-];
+const plugins = ["react"];
 
 module.exports = {
   deprecatedRules: configAll.plugins.react.deprecatedRules,
@@ -21,10 +18,6 @@ module.exports = {
     }),
     all: Object.assign({}, configAll, {
       parserOptions: configAll.languageOptions.parserOptions,
-      plugins,
-    }),
-    'jsx-runtime': Object.assign({}, configRuntime, {
-      parserOptions: configRuntime.languageOptions.parserOptions,
       plugins,
     }),
   },
