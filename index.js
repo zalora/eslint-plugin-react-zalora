@@ -6,7 +6,7 @@ const configRecommended = require("./configs/recommended");
 const rule = require("./lib/rules/disallow-no-translation-text");
 
 // for legacy config system
-const plugins = ["react"];
+const plugins = ["react-zalora"];
 
 module.exports = {
   rules: [rule],
