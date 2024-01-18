@@ -5,7 +5,7 @@ const all = require("./all");
 module.exports = Object.assign({}, all, {
   languageOptions: all.languageOptions,
   rules: {
-    "react/disallow-no-translation-text": 1,
+    "react-zalora/disallow-no-translation-text": 1,
   },
 });
 
