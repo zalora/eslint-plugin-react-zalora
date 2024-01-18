@@ -8,10 +8,14 @@ const rule = require("../lib/rules/disallow-no-translation-text");
 module.exports = {
   plugins: {
     "react-zalora": {
-      rules: [rule],
+      rules: {
+        "disallow-no-translation-text": rule,
+      },
     },
   },
-  rules: [rule],
+  rules: {
+    "disallow-no-translation-text": rule,
+  },
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {

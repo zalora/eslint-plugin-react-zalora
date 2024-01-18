@@ -9,7 +9,9 @@ const rule = require("./lib/rules/disallow-no-translation-text");
 const plugins = ["react-zalora"];
 
 module.exports = {
-  rules: [rule],
+  rules: {
+    "disallow-no-translation-text": rule,
+  },
   configs: {
     recommended: Object.assign({}, configRecommended, {
       parserOptions: configRecommended.languageOptions.parserOptions,
