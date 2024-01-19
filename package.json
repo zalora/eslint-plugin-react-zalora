@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-zalora",
-  "version": "1.1.25",
+  "version": "1.1.26",
   "author": "Yannick Croissant <yannick.croissant+npm@gmail.com>",
   "description": "A custom plugin for eslint-plugin-react",
   "main": "index.js",
